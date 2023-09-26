@@ -1,0 +1,418 @@
+/* some basic styling to make our page look a bit nicer */
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0px;
+}
+header{
+    display: flex;
+    align-items: center;
+    height: 125px;
+    padding: 7px 10px;
+    /* background-image: url(../img/thibault-penin-uqd-Eq1_TtE-unsplash.jpg); */
+    background-size: cover;
+    color: rgb(0, 0, 0);
+    background-color: #2f2d2d;
+}
+header div{
+    height: auto;
+    width: auto;
+    flex-grow: 1;
+    padding-left: 50px;
+}
+header img{
+    height: 80px;
+    width:100px;
+    padding-top: 20px;
+}
+menu{
+    display: flex;
+    margin-bottom: 0px;
+    list-style: none;
+    text-decoration: none;
+    font-size: 20px;
+    
+}
+menu li{
+    border-right: solid 2px #000000;
+    padding: 0px 10px;
+}
+menu li:last-of-type{
+    border-right: none;
+}
+menu>li>a{
+    color: #b5aeae;
+}
+menu>li>a:hover {
+    color: rgb(0, 0, 0); /* Link color on hover */
+  }
+
+p,a,li,figcaption{
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+}
+.featured-dishes {
+    padding: 40px 0;
+    text-align: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url("../img/clem-onojeghuo-zlABb6Gke24-unsplash.jpg");
+    background-size: cover;
+    
+}
+
+.featured-dishes h2 {
+    font-size: 80px;
+    color: #d1cdcd;
+    margin-bottom: 20px;
+}
+
+.featured-dishes .dish {
+    margin-bottom: 40px;
+}
+
+.featured-dishes img {
+    max-width: 100%;
+    height: 200px;
+    width: 280px;
+    border-radius: 5px;
+}
+
+.featured-dishes h3 {
+    font-size: 18px;
+    color: #c8c8c8;
+    margin-top: 10px;
+}
+
+.featured-dishes p {
+    font-size: 16px;
+    color: #c8c8c8;
+    margin-top: 10px;
+}
+
+.featured-dishes span {
+    font-size: 18px;
+    color: #c8c8c8;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Style the reservation button section */
+.reservation-button {
+    background-color: #908988;
+    color: #090909;
+    text-align: center;
+    padding: 40px 0;
+}
+
+.reservation-button h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.reservation-button p {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.reservation-button a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+.reservation-button a:hover{
+    color: rgb(204, 200, 200);
+}
+/* Style the contact information section */
+.contact-info {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.contact-info h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.contact-info address {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+/* Style the footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.about-us {
+    background-color: #fff;
+    padding: 40px;
+    text-align: center;
+}
+
+.about-us h1 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.about-us p {
+    font-size: 18px;
+    color: #555;
+    margin-top: 20px;
+    line-height: 1.5; /* Adjust line spacing as needed */
+}
+
+/* Style the Contact Us section */
+.contact-us {
+    background-color: #fff;
+    padding: 40px;
+    text-align: center;
+}
+
+.contact-us h1 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.contact-us p {
+    font-size: 18px;
+    color: #555;
+    margin-top: 20px;
+    line-height: 1.5; /* Adjust line spacing as needed */
+}
+
+.contact-us address {
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.contact-us form {
+    padding: 0px 390px;
+    justify-content: center;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.contact-us label {
+    font-size: 18px;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.contact-us input,
+.contact-us textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.contact-us button {
+    background-color: #e84c3d;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+/* Style the Careers section */
+.careers {
+    background-color: #fff;
+    padding: 40px;
+    text-align: left;
+}
+
+.careers h1 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.careers p {
+    font-size: 18px;
+    color: #555;
+    margin-top: 20px;
+    line-height: 1.5; /* Adjust line spacing as needed */
+}
+
+.careers h2 {
+    font-size: 24px;
+    color: #333;
+    margin-top: 20px;
+}
+
+.careers ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.careers li {
+    font-size: 16px;
+    color: #333;
+    margin-top: 5px;
+}
+/* Style the Menu section */
+.menuone {
+    background-color: #afaeae;
+    padding: 40px;
+    text-align: center;
+}
+
+.menuone h1 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.menuone h2 {
+    font-size: 24px;
+    color: #333;
+    margin-top: 20px;
+}
+
+.menuone .dish {
+    margin-bottom: 40px;
+}
+
+.menuone img {
+    max-width: 100%;
+    height: 200px;
+    width: 250px;
+    border-radius: 5px;
+}
+
+.menuone h3 {
+    font-size: 18px;
+    color: #333;
+    margin-top: 10px;
+}
+
+.menuone p {
+    font-size: 16px;
+    color: #555;
+    margin-top: 10px;
+}
+
+.menuone span {
+    font-size: 18px;
+    color: #191818;
+    font-weight: bold;
+    margin-top: 10px;
+}
+/* background image to form */
+.abcd{
+    background-image: url("../img/des-recits-NaKwyyh849o-unsplash.jpg");
+    background-size: cover;
+}
+/* Add CSS for the reservation form */
+.box{
+    padding: 90px 90px 0px 90px;
+}
+.reservation-form {
+    background-color: #a39c9c;
+    padding: 0px 390px;
+    /* margin-top: 40px; */
+    border-radius: 5px;
+    text-align: center;
+}
+
+.reservation-form h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.reservation-form label {
+    font-size: 18px;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.reservation-form input,
+.reservation-form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.reservation-form button {
+    background-color: #e84c3d;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+}
+.buttonup{
+    padding-bottom: 1em;
+}
+
+/* Add CSS for the takeout order form */
+.box2{
+    padding: 90px 90px 0px 90px;
+}
+.takeout-order-form {
+    background-color: #a39c9c;
+    padding: 20px;
+    /* margin-top: 40px; */
+    border-radius: 5px;
+    text-align: center;
+    padding: 0px 390px;
+
+}
+
+.takeout-order-form h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.takeout-order-form label {
+    font-size: 18px;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.takeout-order-form input,
+.takeout-order-form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.takeout-order-form button {
+    background-color: #e84c3d;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+}
+.buttonup2{
+    padding-bottom: 1em;
+}
+/* Add more custom styles as needed */

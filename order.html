@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - Your Restaurant Name</title>
+    <link rel="stylesheet" href="css/style.css"> <!-- Link to your CSS file for styling -->
+</head>
+<body>
+    <!-- Navigation bar (You can reuse the same navigation code as the home page) -->
+    <header >
+      <div>
+        <a href="index.html"><img src="./img/NBA-Logo-TheTrails-Website-LogoOption1.jpeg" alt="header logo"></a>
+        <h3>The Trails </h3>
+      </div>
+      <nav>
+        <menu>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="order.html">Orders</a></li>
+          <li><a href="contact.html">Contact us</a></li>
+          <li><a href="about.html">About us</a></li>
+          <li><a href="careers.html">Careers</a></li>
+         
+        </menu>
+      </nav>
+    </header>
+
+   
+   <section class="abcd">
+    <!-- Reservation form -->
+   <div class="box">
+    <section class="reservation-form">
+        <h2>Table Reservation</h2>
+        <form action="reservation.php" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" required>
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" required>
+            <label for="time">Time:</label>
+            <input type="time" id="time" name="time" required>
+            <label for="guests">Number of Guests:</label>
+            <input type="number" id="guests" name="guests" min="1" required>
+           <div class="buttonup">
+            <button type="submit">Submit Reservation</button>
+           </div>
+        </form>
+    </section>
+   </div>
+<!-- Takeout order form -->
+<div class="box2">
+    <section class="takeout-order-form">
+        <h2>Order Takeout</h2>
+        <form action="takeout-order.php" method="POST">
+            <label for="takeout-name">Name:</label>
+            <input type="text" id="takeout-name" name="takeout-name" required>
+            <label for="takeout-email">Email:</label>
+            <input type="email" id="takeout-email" name="takeout-email" required>
+            <label for="takeout-phone">Phone:</label>
+            <input type="tel" id="takeout-phone" name="takeout-phone" required>
+            <label for="takeout-items">Select Items:</label>
+            <select id="takeout-items" name="takeout-items" multiple required>
+                <!-- Add options for menu items that can be selected for takeout -->
+                <option value="item1">Item 1</option>
+                <option value="item2">Item 2</option>
+                <!-- Add more menu items as needed -->
+            </select>
+            <div class="buttonup2">
+                <button type="submit">Place Takeout Order</button>
+            </div>
+        </form>
+    </section>
+</div>
+   </section>
+
+    <!-- Footer (You can reuse the same footer code as the home page) -->
+    <footer>
+        <p>&copy; 2023 Your Restaurant Name. All rights reserved.</p>
+    </footer>
+</body>
+</html>
